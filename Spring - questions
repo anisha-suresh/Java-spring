@@ -1,0 +1,399 @@
+                                                                      SECTION - A
+
+Q1. What are the major features in different versions of Spring Framework?
+
+The Spring Framework has undergone several major updates, each adding new features and improvements. The major features in each version of Spring Framework are:
+
+Spring Framework 1.0 (released in March 2004): This version introduced the core features of the framework, including Inversion of Control (IoC) and Dependency Injection (DI).
+
+Spring Framework 2.0 (released in October 2006): This version introduced support for aspect-oriented programming (AOP) and a range of data access features, including support for JDBC and Hibernate.
+
+Spring Framework 3.0 (released in December 2009): This version introduced support for Java-based configuration and the Spring Expression Language (SpEL). It also introduced support for RESTful web services and improved support for web applications.
+
+Spring Framework 4.0 (released in December 2013): This version introduced support for Java 8 and the ability to run on Java EE 7. It also introduced a new web-socket module, improved data access support and a new testing framework.
+
+Spring Framework 5.0 (released in September 2017): This version introduced support for Java 9 and Java 10 and also added a reactive programming model with Spring WebFlux. It also introduced support for functional bean definitions and improved support for Kotlin.
+
+Spring Framework 6.0 (released in September 2020): This version introduced a new feature called "Spring Security for Micrometer" which provides metrics for Spring Security, it also introduced the new "Spring Security for OAuth 2.0" which provides OAuth2 support without the need of additional dependencies. Also, it introduced the support for JDK 15 and improved support for GraalVM.
+
+Q2. What is a Spring Framework?
+
+The Spring Framework is an application framework and inversion of control container for the Java platform. The framework's core features can be used by any Java application, but there are extensions for building web applications on top of the Java EE platform.
+
+Q3. List the advantages of Spring Framework
+
+The Spring Framework provides several advantages for developing enterprise Java applications, some of the main advantages are:
+
+Loose Coupling: Spring promotes loose coupling between different components of an application, allowing for more flexible and maintainable code.
+
+Inversion of Control: Spring's Inversion of Control (IoC) feature allows the framework to manage the dependencies between objects and manage the lifecycle of objects, which leads to a more modular and easily testable code.
+
+Dependency Injection: Spring's Dependency Injection (DI) feature allows objects to be automatically provided with their dependencies, rather than having to create them manually, which leads to more maintainable and testable code.
+
+Aspect-Oriented Programming: Spring's AOP feature allows for the separation of cross-cutting concerns, such as logging and security, from the main business logic, which leads to a more modular and easily maintainable code.
+
+Data Access: Spring provides support for various data access technologies, including JDBC, Hibernate, and JPA, which makes it easy to work with databases.
+
+Web Development: Spring provides a web framework, Spring MVC, which can be used to build web applications, which makes it easy to create web applications.
+
+Testing: Spring provides support for unit testing and integration testing, with a variety of testing frameworks and mock objects, which makes it easy to test applications.
+
+Modularity: Spring is a modular framework, which means not all modules are needed for every application, only the required modules should be included in the project, this allows a great flexibility and scalability.
+
+Large Community: Spring has a large and active community, which means that there is a lot of support and resources available, such as documentation, tutorials, and forums.
+
+Spring Boot: Spring Boot is a Spring module that provides a way to create stand-alone, production-grade Spring-based applications with minimal effort, it makes it easy to create production-ready applications with minimal configuration.
+
+Spring Cloud: Spring Cloud is a Spring module that provides a way to create distributed systems and microservices, it makes it easy to create cloud-native applications.
+
+Spring Security: Spring Security is a Spring module that provides a way to secure applications with minimal effort, it makes it easy to secure applications with minimal configuration.
+
+
+Q4. What are the different features of Spring Framework?
+
+The Spring Framework includes several features, including:
+1. Inversion of Control (IoC): This feature allows the framework to manage the dependencies between objects and manage the lifecycle of objects.
+2. Dependency Injection (DI): This feature allows objects to be automatically provided with their dependencies, rather than having to create them manually.
+3. Aspect-Oriented Programming (AOP): This feature allows for the separation of cross-cutting concerns, such as logging and security, from the main business logic.
+4. Data Access: Spring provides support for various data access technologies, including JDBC, Hibernate, and JPA.
+5. Web Development: Spring provides a web framework, Spring MVC, which can be used to build web applications.
+6. Testing: Spring provides support for unit testing and integration testing, with a variety of testing frameworks and mock objects.
+7. Other features: Spring also provides support for messaging, caching, scheduling, and more.
+8. Spring Boot: Spring Boot is a Spring module that provides a way to create stand-alone, production-grade Spring-based applications with minimal effort.
+9. Spring Cloud: Spring Cloud is a Spring module that provides a way to create distributed systems and microservices.
+10. Spring Security: Spring Security is a Spring module that provides a way to secure applications with minimal effort.
+
+Q5. How many modules are there in Spring Framework and what are they?
+
+The Spring Framework is composed of several modules, each providing a specific set of functionality. As of the knowledge cut-off date, the most recent version of Spring Framework (Spring 5) includes the following modules:
+
+Core Container: This module provides the fundamental parts of the framework, including the IoC and DI features.
+
+Data Access/Integration: This module provides support for data access and integration with technologies such as JDBC, Hibernate, and JPA.
+
+Web: This module provides support for web-based applications, including the Spring MVC web framework.
+
+AOP: This module provides support for aspect-oriented programming.
+
+Instrumentation: This module provides class instrumentation support and class loader implementations to be used in certain application servers.
+
+Messaging: This module provides support for messaging-based applications, including support for JMS.
+
+Test: This module supports testing, including JUnit and TestNG integration.
+
+Spring Boot: This module provides a way to create stand-alone, production-grade Spring-based applications with minimal effort.
+
+Spring Cloud: This module provides a way to create distributed systems and microservices.
+
+Spring Security: This module provides a way to secure applications with minimal effort.
+
+Others: There are other modules such as Spring WebFlux, Spring Data, Spring Batch and more, that provides specific functionality.
+
+
+Q6. What is a Spring configuration file?
+
+A Spring configuration file is an XML, Java, or annotation-based file that is used to configure the Spring Framework and the beans that it manages. It typically includes information about the beans that are managed by the Spring Framework, such as their class names and their dependencies on other beans.
+
+The Spring configuration file can be used to define and wire together the various components of an application, such as services, repositories, and controllers. It can also be used to configure aspects such as data access and security.
+
+An XML-based configuration file typically has the ".xml" file extension and is typically located in the application's classpath.
+
+Annotation-based configuration uses Java annotations and no XML configuration file is needed, all the configurations will be written in code.
+
+Java-based configuration uses Java code, similar to annotation-based configuration, but instead of using annotations, the configuration is done using pure Java code.
+
+In Spring Boot, the most popular way is to use annotation-based configuration and the use of properties files or environment variables to configure the application.
+
+Q7. What are the different components of a Spring application?
+
+A Spring application typically consists of several different components that work together to provide the desired functionality. Some of the main components of a Spring application are:
+1. Bean: A bean is an object that is managed by the Spring Framework. Beans are typically defined in a Spring configuration file and are created and managed by the Spring container.
+2. Spring Container: The Spring container is responsible for creating, configuring, and managing the beans in a Spring application. The container is also responsible for managing the dependencies between beans.
+3. Bean Factory: A Bean Factory is an interface for an object that can be used for creating and managing beans. It is responsible for instantiating, configuring, and assembling the objects in a Spring application.
+4. ApplicationContext: An ApplicationContext is an extension of the BeanFactory interface, it is the central interface within a Spring application for providing configuration information to the application.
+5. Configuration: Spring configuration files are used to configure the beans and other components of a Spring application. They can be in the form of XML, Java, or annotations.
+6. Aspect: An aspect is a modularization of a concern that cuts across multiple objects. Spring provides support for aspect-oriented programming (AOP), which allows for the separation of cross-cutting concerns, such as logging and security, from the main business logic.
+7. Data Access: Spring provides support for various data access technologies, including JDBC, Hibernate, and JPA, which can be used to interact with databases in a Spring application.
+8. Spring MVC: Spring MVC is a web framework that can be used to build web applications in a Spring application.
+9. Services: Services are the component that provides the main functionality of the application and it interacts with other components such as repositories, controllers, etc.
+10. Repositories: Repositories are the component that provides the data access functionality of the application and it communicates with the database.
+11. Controllers: Controllers are the component that provides the web functionality of the application, it receives the requests from the clients and returns the appropriate responses.
+12. Spring Boot: Spring Boot is a Spring module that provides a way to create stand-alone, production-grade Spring-based applications with minimal effort, it makes it easy to create production-ready applications with minimal configuration.
+13. Spring Cloud: Spring Cloud is a Spring module that provides a way to create distributed systems and microservices, it makes it easy to create cloud-native applications.
+14. Spring Security: Spring Security is a Spring module that provides a way to secure applications with minimal effort, it makes it easy to secure applications with minimal configuration.
+
+
+Q8. What are the various ways of using Spring Framework?
+
+
+There are several ways of using the Spring Framework to build Java applications, some of the main ways include:
+1. Spring Core: The Spring Core module provides the fundamental parts of the framework, including the IoC and DI features. It can be used to build applications that have a simple architecture and don't require advanced features such as web development or data access.
+2. Spring MVC: The Spring MVC module provides support for web-based applications, including a web framework that can be used to build web applications. It can be used to build traditional web applications that run on a server and are accessed through a web browser.
+3. Spring Boot: Spring Boot is a Spring module that provides a way to create stand-alone, production-grade Spring-based applications with minimal effort. It provides a simplified way of creating Spring-based applications that can be run as a single executable jar.
+4. Spring Cloud: Spring Cloud is a Spring module that provides a way to create distributed systems and microservices. It provides libraries for common patterns in distributed systems.
+5. Spring Security: Spring Security is a Spring module that provides a way to secure applications with minimal effort. It provides a comprehensive security solution for applications, with support for authentication, authorization, and more.
+6. Spring Data: Spring Data is a Spring module that provides a way to access data with different datastores, this module provide a consistent way of accessing data across different data stores, it supports different data stores like MongoDB, Cassandra, Redis and more.
+7. Spring Batch: Spring Batch is a Spring module that provides a way to process large amounts of data in a batch process. It provides functionality such as reading and writing data, logging, and error handling.
+8. Spring WebFlux: Spring WebFlux is a Spring module that provides a reactive web framework. It allows building non-blocking web applications and APIs, it's an alternative to Spring MVC, it's designed to handle high concurrency and low-latency scenarios.
+
+Q9. What is Spring IOC Container?
+
+The Spring IoC (Inversion of Control) container is the core of the Spring Framework. It is responsible for creating and managing objects, known as beans, and wiring them together using dependency injection. This allows for a high degree of decoupling between the various components in an application, making it more modular, testable, and easy to maintain. The container can be configured using XML, Java annotations, or Java code, and provides a wide range of features for managing the lifecycle of beans and handling various types of dependencies.
+
+
+Q10. What do you mean by Dependency Injection?
+
+Dependency Injection (DI) is a software design pattern that allows a programmer to remove hard-coded dependencies and make it possible to change them, whether at run-time or compile-time. It means that the dependencies, or objects that a class needs in order to function, are passed in from the outside, rather than being created or located within the class.
+
+Dependency Injection is a way to implement Inversion of Control (IoC), where the control being inverted is the setting of object's dependencies. This can be done through Constructor injection, Setter injection or Interface injection.
+
+The main advantage of Dependency Injection is that it makes the code more maintainable, testable and flexible. Because the dependencies are passed in from the outside, rather than being created or located within the class, it is easy to swap in different implementations for testing or for different environments. Additionally, because the dependencies are clearly stated in the constructor or setter method, it is easy to understand what a class needs to function.
+
+Q12. Please change default server port from 8080 to 9090? 
+To change the default server port from 8080 to 9090 in a Spring Boot application, you can do the following:
+
+In your application.properties file, add the following line:
+server.port=9090
+Or in your application.yml file add the following:
+server:
+  port: 9090
+Or you can also use command line arguments to set the server port:
+java -jar myapp.jar --server.port=9090
+Or you can also set the server port programmatically, by adding the following code in your main class:
+@Value("${server.port}")
+int serverPort;
+
+public static void main(String[] args) {
+    SpringApplication app = new SpringApplication(MyApp.class);
+    app.setDefaultProperties(Collections.singletonMap("server.port", "9090"));
+    app.run(args);
+}
+It's worth noting that you need to make sure that the port 9090 is not being used by another application on your machine, also if you're running your application behind a firewall you might need to configure it to allow incoming traffic to port 9090.
+
+
+Q13. How to resolve whitelabel error page in spring boot application?
+The "whitelabel error page" is a default error page that is displayed by Spring Boot when an error occurs in a web application.
+
+To resolve this error page, you can do one of the following:
+
+1.Create a custom error page: You can create a custom error page, such as a .jsp or .html file, and configure Spring Boot to use it instead of the default error page. To do this, you need to configure the error page in your application.properties file:
+server.error.whitelabel.enabled=false
+server.error.path=/error
+
+
+2.Create a custom error controller: You can create a custom error controller that handles errors and returns a custom response. To do this, you need to create a class that implements the ErrorController interface and annotate it with @Controller.
+@Controller
+public class MyErrorController implements ErrorController {
+    @RequestMapping("/error")
+    public String handleError() {
+        return "my_custom_error_page";
+    }
+    @Override
+    public String getErrorPath() {
+        return "/error";
+    }
+}
+
+
+3.Create a custom error handler: You can create a custom error handler that handles errors and returns a custom response. To do this, you need to create a class that implements the ErrorController interface and annotate it with @ControllerAdvice.
+
+@ControllerAdvice
+public class MyErrorHandler {
+    @ExceptionHandler(value = Exception.class)
+    public ModelAndView handleError(HttpServletRequest req, Exception e) {
+        ModelAndView mav = new ModelAndView();
+        mav.addObject("exception", e);
+        mav.addObject("url", req.getRequestURL());
+        mav.setViewName("my_custom_error_page");
+        return mav;
+    }
+}
+
+
+Q14. How are i18n and localization supported in Spring MVC?
+
+Internationalization (i18n) and localization (L10n) are supported in Spring MVC through the use of message sources and locale resolvers.
+
+A message source is a bean that holds a collection of messages, where each message is associated with a key and a locale. The messages can be stored in properties files, database, or other sources and are used to display messages on the user interface.
+
+A locale resolver is a bean that determines the locale of the user. This can be done using various methods such as examining the Accept-Language header in the HTTP request, or by using a cookie or session attribute.
+
+Once the locale is resolved, Spring MVC can use it to look up the appropriate message from the message source and display it on the user interface.
+
+
+Q15. Differentiate between a Bean Factory and an Application Context.
+
+Both Bean Factory and Application Context are part of the Spring Framework and are used to manage the lifecycle of beans, but they have some key differences:
+
+Bean Factory is a simpler container, it only provides the basic functionality of creating and managing beans. It is typically used in resource-constrained environments, such as in mobile devices or applets, where memory is at a premium.
+Application Context is built on top of Bean Factory, it provides additional functionality such as support for internationalization (i18n) and event propagation, making it more suitable for enterprise applications. It also has the ability to read configuration metadata from XML and annotation-based configuration.
+Bean Factory does not support the automatic creation of dependent objects, whereas Application Context does.
+Bean Factory does not support the ability to read from external resources such as property files, whereas Application Context does.
+Bean Factory does not support the ability to publish application events to beans, whereas Application Context does.
+In summary, Bean Factory is a basic container that provides the basic functionality of creating and managing beans, whereas Application Context is a more advanced container that provides additional functionality such as support for internationalization, event propagation, and the ability to read configuration metadata from XML and annotation-based configuration.
+
+                                                                          Section - B
+
+Q 1 - Which of the following is correct assertion about spring?
+A) - Spring enables developers to develop enterprise-class applications using POJOs.
+B) - Spring is organized in a modular fashion.
+C) - Testing an application written with spring is simple because environment-dependent code is moved into this framework.
+D) - All of above.
+
+Ans : D) All of the above
+
+2. The concept of an endpoint in web services is much like that of a controller in web applications.
+a) True
+b) False
+c) None of the above
+d) All of the above
+
+Ans : a) True
+
+3. An alternative to Spring HibernateTemplate is:-
+a) HibernateContext
+b) Hibernate contextual sessions
+c) All of the mentioned
+d) None of the mentioned
+
+Ans : b) Hibernate contextual sessions
+
+4. DAO methods must be made transactional.
+a) True
+b) False
+c) None of the above
+d) All of the above
+
+Ans : a) True
+
+5. Annotation to find a transaction and then fail, complaining that no Hibernate session been bound to the thread.
+a) @Transaction
+b) @Transactional
+c) @Transactions
+d) None of the mentioned
+
+Ans : b) @Transactional
+
+6. Class used to have full access to the Spring context’s life cycle machinery and dependency injection.
+    A. DelegatingFilterProxy
+    B. WebApplicationContextUtils.getRequiredWeb()
+    C. WebApplicationUtils.getRequiredWebApplicationContext()
+    D. None of the mentioned
+    
+Ans : B. WebApplicationContextUtils.getRequiredWeb()
+
+7. What is Front controller pattern in spring?
+(A) Dispatcher servlet
+(B) Web.xml
+(C) Spring.xml
+(D) Controller.java Any Spring controller used in MVC
+
+Ans: (A) Dispatcher servlet
+
+8. - What is singleton scope?
+A - This scopes the bean definition to a single instance per Spring IoC container.
+B - This scopes the bean definition to a single instance per HTTP Request.
+C - This scopes the bean definition to a single instance per HTTP Session.
+D - This scopes the bean definition to a single instance per HTTP Application/ Global session
+
+Ans: A - This scopes the bean definition to a single instance per Spring IoC container.
+
+9. What are the JPA @Entity association attributes?
+    A. Association validation
+    B. Association multiplicity
+    C. Association cascade behavior
+    D. Association direction
+    
+Ans:
+B. Association multiplicity
+C. Association cascade behavior
+D. Association direction
+
+10. What are beans in the concept of Spring or what are spring beans?
+(A) Controller classes
+(B) Service classes
+(C) Repository
+(D) Any class that is managed by the container.
+
+Ans: (D) Any class that is managed by the container.
+
+11.Which interface in spring is responsible for Instantiating and managing the so called Spring beans?
+(A) Bean Factory
+(B) ApplicationContext
+(C) BeanDefenition
+(D) BeanFactoryAware
+
+Ans: (B) ApplicationContext
+
+12. JPA implementation is provided by ---?
+    A. Hibernate
+    B. Toplink
+    C. Ibatis
+    D. All of the above 
+    
+Ans: D. All of the above
+
+13. What is byName mode of autowiring?
+A - Default setting which means no autowiring and you should use explicit bean reference for wiring.
+B - Autowiring by property name. Spring tries to match and wire its properties with the beans defined by the same names in the configuration file.
+C - Spring first tries to wire using autowire by constructor, if it does not work, Spring tries to autowire by byType.
+D - Similar to byType, but type applies to constructor arguments.
+
+Ans: B - Autowiring by property name. Spring tries to match and wire its properties with the beans defined by the same names in the configuration file.
+
+14. What is Spring MVC framework?
+A - Spring MVC framework is Model-Value-Class architecture and used to bind model data with values.
+B - The Spring web MVC framework provides model-view-controller architecture and ready components that can be used to develop flexible and loosely coupled web applications.
+C - Spring MVC framework is used for Transaction management for Web Applications.
+D - Spring MVC framework is used for AOP for Web Applications.
+
+Ans: B - The Spring web MVC framework provides model-view-controller architecture and ready components that can be used to develop flexible and loosely coupled web applications.
+
+15. What is the Life Cycle Of A Jpa Entity?
+    A. New / Transient
+    B. Managed / Persisted
+    C. Detached
+    D. All of the above 
+    
+Ans: D. All of the above
+
+
+16. Which of the following statement is correct?
+    A. Spring is not an open source framework.
+    B. Spring is heavyweight.
+    C. Spring supports tight coupling.
+    D. Spring using Dependency Injection and supports loose coupling.
+    
+Ans:  D. Spring using Dependency Injection and supports loose coupling.
+
+17. What annotation is used to map a method for PUT request?
+    A. @PutMapping
+    B. @PostMapping
+    C. @Put
+    D. @Post
+    
+    Ans :  A. @PutMapping
+
+18. What is the built-in library in Spring Boot used to serialize objects to JSON format?
+    A. JsonFormatter
+    B. Jackson
+    C. Gson
+    D. MessageConverter
+    
+    Ans: B. Jackson
+
+19. Annotation for Hibernate exceptions to be translated into Spring’s DataAccessException for consistent exception handling
+    A. @Translation
+    B. @Repo
+    C. @Repository
+    D. None of the above 
+    
+    Ans: C. @Repository
+
+20. What annotation is used to map value to the method argument in http://localhost/factorial/{value}?
+    @Map
+    @Param
+    @RequestParam
+    @PathVariable
+    
+    Ans: @PathVariable
